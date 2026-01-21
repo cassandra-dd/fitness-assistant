@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+.pytest_cache/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Local data (avoid committing personal logs)
+fitness_data.json
+
+# Logs
+*.log
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Android wrapper build artifacts
+android_webview/local.properties
+android_webview/**/build/
+android_webview/.gradle/
+android_webview/.idea/
+

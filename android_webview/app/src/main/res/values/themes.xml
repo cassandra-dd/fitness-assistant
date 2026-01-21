@@ -1,0 +1,4 @@
+<resources>
+    <style name="Theme.FitnessAssistantWebView" parent="Theme.AppCompat.Light.NoActionBar" />
+</resources>
+

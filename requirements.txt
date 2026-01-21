@@ -1,0 +1,6 @@
+streamlit==1.45.1
+pandas
+matplotlib
+plotly
+Pillow
+openai>=1.0.0
