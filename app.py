@@ -435,8 +435,8 @@ def main():
         st.markdown("---")
 
     api_key = get_setting("OPENAI_API_KEY", "DEEPSEEK_API_KEY", default="").strip()
-    base_url = get_setting("OPENAI_BASE_URL", "DEEPSEEK_BASE_URL", default="https://api.deepseek.com").strip()
-    model_name = get_setting("OPENAI_MODEL", "DEEPSEEK_MODEL", default="deepseek-chat").strip()
+    base_url = get_setting("OPENAI_BASE_URL", "DEEPSEEK_BASE_URL", default="https://api.deepseek.com").strip() or "https://api.deepseek.com"
+    model_name = get_setting("OPENAI_MODEL", "DEEPSEEK_MODEL", default="deepseek-chat").strip() or "deepseek-chat"
 
     if page == "📝 今日记录":
         st.header("📝 今天的汗水时刻")
