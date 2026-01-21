@@ -432,7 +432,6 @@ def main():
     with st.sidebar:
         st.title("🍑 健身小助手")
         page = st.radio("导航", ["📝 今日记录", "📅 历史记录", "✨ 生成本周内容", "🍽️ 今天吃什么", "🆘 吃多了怎么办"])
-        st.markdown("---")
 
     api_key = get_setting("OPENAI_API_KEY", "DEEPSEEK_API_KEY", default="").strip()
     base_url = get_setting("OPENAI_BASE_URL", "DEEPSEEK_BASE_URL", default="https://api.deepseek.com").strip() or "https://api.deepseek.com"
