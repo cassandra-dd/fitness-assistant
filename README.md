@@ -11,7 +11,8 @@ python -m streamlit run app.py
 可选：在同目录放置 `.env`（不要提交到 Git）：
 
 ```env
-OPENAI_API_KEY="你的key"
+# OPENAI_API_KEY="你的key"  # OpenAI / 兼容接口
+DEEPSEEK_API_KEY="你的key"  # DeepSeek
 OPENAI_BASE_URL="https://api.deepseek.com"
 OPENAI_MODEL="deepseek-chat"
 ```
@@ -23,14 +24,10 @@ OPENAI_MODEL="deepseek-chat"
 3. 在 Streamlit Cloud 的 **Secrets** 中配置（推荐）：
 
 ```toml
-OPENAI_API_KEY="你的key"
+# OPENAI_API_KEY="你的key"
+DEEPSEEK_API_KEY="你的key"
 OPENAI_BASE_URL="https://api.deepseek.com"
 OPENAI_MODEL="deepseek-chat"
 ```
 
 部署完成后会得到一个 `*.streamlit.app` 的公网地址。
-
-## Android APK（WebView 壳）
-
-见 `ANDROID_APK.md`（`android_webview/` 只是加载网页的壳，真正的应用仍是公网/局域网中的 Streamlit 服务）。
-
